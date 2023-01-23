@@ -124,7 +124,29 @@ namespace projekt_zaliczeniowy_1._0
 
         private void button18_Click(object sender, EventArgs e)
         {
+            secondNumber = double.Parse(textBox1.Text);
 
+            switch (operation)
+            {
+                case "+":
+                    textBox1.Text = (firstNumber + secondNumber).ToString();
+                    break;
+
+                case "-":
+                    textBox1.Text = (firstNumber - secondNumber).ToString();
+                    break;
+
+                case "*":
+                    textBox1.Text = (firstNumber * secondNumber).ToString();
+                    break;
+
+                case "/":
+                    textBox1.Text = (firstNumber / secondNumber).ToString();
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }
